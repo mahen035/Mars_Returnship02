@@ -3,16 +3,35 @@
     <head>
         <title>New Page</title>
 
+   <style>
+       h1 {color:blue}
+       #type1 {accent-color:green}
+   </style>
+   <link rel = "stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
     </head>
     <body>
         <h1>Welcome!</h1>
         <a href = "#section1" target="_default">go to google</a>
 
-        <p id="section1">
+        <p id="section1" style="color:green;background-color:black">
             This paragraph is for &nbsp;&nbsp;&nbsp;&nbsp; section 1
         </p>
+        <div class="fontred">
 
-        <table border="1">
+            <h3>this is first div to demonstrate css</h3>
+            <span><p>Paragraph one inside a div</p></span>
+            <p>Paragraph two inside a div</p>
+        </div>
+        <div class="fontgreen">
+            <h3>this is second div to demonstrate css</h3>
+        </div>
+        <p class ="fontgreen">
+            this is a new paragraph
+        </p>
+
+        <table border="1" class="fontred fontcaps">
             <caption>Employee Details</caption>
             <tr>
                 <th colspan="2">Name</th>
@@ -64,7 +83,7 @@
             <dd>--Cheap</dd>
         </dl><br>
 
-        <h1>HTML Form:</h1>
+        <h1 id="form1">HTML Form:</h1>
         
         <form action="/home.html" method="post">
            
@@ -136,7 +155,7 @@
         <input type ="submit" name="submit" value ="sign up"> <br><br>
         <input type="button" name="btn1" value ="click me" onclick="alert('Button Clicked')";>
         <fieldset>
-            <legend>Personal Information</legend>
+            <legend>personal information</legend>
             <label for="uname">User Name:</label>
             <input type="text" id="uname" name="uname" placeholder="enter user name" />
             <label for="add">Address:</label>
@@ -146,7 +165,7 @@
         </form>
         <hr>
         <h4>8  &lt; 12</h4>
-        <h4>You owe me &dollar;500 </h4>
+        <h4 id="amt">You owe me &dollar;500 </h4>
         <h4>&copy;2020-2022 Mars </h4>
         <h4>&reg;</h4>
         <p>
@@ -158,6 +177,10 @@
         <p>
             <a href="https://getreturnship.com/" target="myFrame">Open Mars Returnship</a>
         </p>
+        <hr>
+        <div class="fontstyle">
+            This section is for the fonts
+        </div>
 
     </body>
 </html>

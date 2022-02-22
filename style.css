@@ -1,0 +1,79 @@
+a {
+   text-decoration: none; 
+   color:#007700; 
+}
+
+caption {
+    background-color: rgb(130, 103, 156);
+}
+
+p {
+    text-align: center;
+}
+
+#amt{
+    direction: rtl;
+}
+
+legend{
+    text-transform: capitalize !important;
+}
+
+#form1{
+    text-shadow: 2px 2px 5px red;
+}
+
+*{
+    background-color: aqua;
+    margin: auto;
+}
+
+.fontred{
+    color:red;
+}
+
+.fontcaps{
+    text-transform: uppercase;
+}
+
+div.fontgreen{
+    color:green
+}
+
+ ol, p{
+    text-transform: lowercase;
+}
+p.fontgreen{
+    color:green;
+    font-style: italic;
+}
+
+div p{
+    background-color: blueviolet;
+    font-style: normal;
+}
+
+span > p{
+    font-style: italic;
+}
+
+div+p{
+    font-size: x-small;
+}
+
+p ~ div{
+    background-color: yellowgreen;
+}
+
+/* this is for table tag */
+table{
+    margin:auto;
+}
+
+div.fontstyle{
+    background-color: white;
+    font: oblique small-caps 1em Sofia;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+
