@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txtid">Before the script....</p>
+    
+    <br>
+    Username: <input type="text" id="uname" size="20"><br><br>
+    Password: <input type="password" id="pwd" size="20"><br><br>
+    <button onclick="changeColor()">click here..</button><br><br>
+
+    First Number: <input type="number" id="first" size="20"><br><br>
+    Second Number: <input type="number" id="second" size="20"><br><br>
+
+    Result: <input type ="number" id ="result"><br><br>
+
+    <button onclick="getSum()">Add</button>
+    
+</body>
+<script>
+    console.log("Executing Script from within the HTML...");
+    function changeColor(){
+        var name = document.getElementById("uname").value;
+        var password = document.getElementById("pwd").value;
+        if(name == "" || password == ""){
+            alert('Username or Password cannot be blank')
+
+        }
+        else{
+            alert('Welcome '+name);
+        }
+        
+        document.body.style.backgroundColor="cyan";
+        document.getElementById("txtid").innerHTML = "After Button Clicked";
+    }
+
+    function getSum(){
+
+        var a,b,c;
+        //console.log('value of a prior to assignment: '+a);
+        a = Number(document.getElementById("first").value);
+       // console.log('value of a post assignment: '+a);
+        b = Number(document.getElementById("second").value);
+        c = a+b;
+        document.getElementById("result").value = c;
+    }
+
+</script>
+</html>
