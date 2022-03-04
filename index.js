@@ -84,13 +84,125 @@ for(count =0; count < 15; count++){
 } while(count < 5); */
 
 
-let str = 'Hi how are you?'; 
+/* let str = 'Hi how are you?'; 
 /* str = 'hi'; 
 console.log( str[0] ); */
 
-console.log(str.substring(3,10));  //start index, length of original string
+/* console.log(str.substring(3,10));  //start index, length of original string
 
-console.log(str.substr(3,10)); 
+console.log(str.substr(3,10));  */
+
+
+let names = ["John", "Mike", "Peter", "Kevin"];
+
+/* for(let i = 0; i<names.length; i++){
+    if(names[i].startsWith('P')){
+        continue;
+    }
+    console.log(names[i]);
+} */
+
+/* console.log('before :' +names);
+console.log(names.pop());
+
+console.log('After :'+names);
+
+console.log(names.push('Sara'));
+
+console.log('After Push :'+names); */
+
+/* console.log('before :' +names);
+console.log(names.shift());
+
+console.log('After :'+names);
+
+console.log(names.unshift('Kia'));
+
+console.log('After Unshift :'+names); */
+
+//let names = ["John", "Mike", "Peter", "Kevin"];
+//console.log('Before: '+names);
+
+//console.log(names.slice(0,3));
+
+/* let newNames = names;
+
+newNames.push('Raymond');
+
+console.log('After: '+names);
+
+for(let name of names){  //in will be used to display the index value
+    console.log(name);
+}
+
+/* names.length = 3;
+
+console.log('After manipulating the length: '+names); */
+
+/*names[36] = 'Test';
+console.log('After manipulating the length: '+names);
+
+console.log(names.length) */
+
+/* let hello = function(){   // function hello(){}
+    console.log('Hello');
+}
+
+console.log(typeof hello);
+
+hello(); */
+
+//FUNCTION EXPRESSION
+/* let test =function (a, b) {
+    a+b;
+    console.log('Arrow function demo');
+} */ 
+
+//add(8,9);
+
+//ARROW FUNCTION WITH PARAMETERS
+/* let test1 = (a, b) => {
+    let c = a+b;
+    return c; 
+}
+console.log(test1(12, 23));
+
+console.log(typeof test1); */
+
+let numbers = [12, 23, 18, 26, 40];
+
+//FILTER
+let evenNumbers = numbers.filter(getEven);
+
+function getEven(num){
+    return num%2 == 0;
+}
+
+console.log('Filtered :' +evenNumbers);
+
+console.log('Original '+numbers);
+
+//MAP
+let squaredNum = numbers.map(getSquared)
+
+function getSquared(num){
+    return num*num;
+}
+
+console.log('Squared: '+squaredNum);
+
+//REDUCE 
+let sum = numbers.reduce(getSum, 0);
+
+function getSum(total, num){
+    return total+num;
+}
+
+console.log("Sum of all numbers: "+sum);
+
+
+
+
 
 
 
