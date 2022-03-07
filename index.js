@@ -169,10 +169,10 @@ console.log(test1(12, 23));
 
 console.log(typeof test1); */
 
-let numbers = [12, 23, 18, 26, 40];
+//let numbers = [12, 23, 18, 26, 40];
 
 //FILTER
-let evenNumbers = numbers.filter(getEven);
+/* let evenNumbers = numbers.filter(getEven);
 
 function getEven(num){
     return num%2 == 0;
@@ -198,7 +198,114 @@ function getSum(total, num){
     return total+num;
 }
 
-console.log("Sum of all numbers: "+sum);
+console.log("Sum of all numbers: "+sum); */
+
+
+/* let person = {
+    firstName: 'Shane',
+    lastName: 'Warne',
+    play(){
+        console.log('All time greats');
+    }
+};
+
+console.log(person.firstName + " "+person.lastName);
+
+person.country = 'Aus';
+
+console.log("Before :" ,person); */
+
+//delete person.country;
+
+//console.log("After :" ,person);
+
+//console.log('lastName' in person);
+
+/* for(const key in person){
+    console.log(key+":",person[key]);
+}
+
+person.play(); */
+
+
+/* function Person(firstName, lastName, age){  //Constructor function
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.getInfo = function(){
+        return this.firstName + " "+this.lastName+ " age: "+this.age;
+    };
+}
+
+let person1 = new Person('Peter', 'Waugh', 34);
+let person2 = new Person('John', 'Doe', 31);
+let person3 = new Person('Mike', 'Travis', 38);
+
+//console.log(person3);
+console.log(person1.getInfo());
+
+var js = (function(x) {return x*x;}(10));
+
+console.log(js); */
+
+/* function f(){
+    return this;
+}
+
+console.log(f()); */
+
+/* let person = {
+    firstName: "John",
+    lastName: "Doe",
+    f: function getDetail(){
+        return this.firstName + " "+ this.lastName;
+
+    },
+    foo: function() { 
+		const baz = () => this; 
+		return baz(); 
+	}, 
+	bar: () => this
+
+}
+
+console.log(person.foo);
+console.log(person.bar); */
+
+
+class Person {
+    #name
+    constructor(name){
+        this.#name =name;
+    }
+    set name(name){
+        console.log('Setter method is called..')
+        if(name === ""){
+            console.log("Username cannot be empty");
+        }
+        else{
+            this.#name = name;
+        }
+        
+    }
+
+    get name() {
+        return this.#name;
+    }
+}
+
+const person1 = new Person("Tony");
+const person2 = new Person("Mike");
+console.log('Before: '+person1.name)
+//person1.setName("Mike");
+person1.name = "Dave";
+
+console.log('After: '+person1.name)
+
+
+
+
+
 
 
 
