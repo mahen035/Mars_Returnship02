@@ -273,7 +273,7 @@ console.log(person.foo);
 console.log(person.bar); */
 
 
-class Person {
+/* class Person {
     #name
     constructor(name){
         this.#name =name;
@@ -300,7 +300,57 @@ console.log('Before: '+person1.name)
 //person1.setName("Mike");
 person1.name = "Dave";
 
-console.log('After: '+person1.name)
+console.log('After: '+person1.name) */
+
+function getValues(){
+   // return [10,20,30];
+   return null;
+}
+
+let[x=1,y=2,z=3,t=12,...args] = getValues() || [];
+
+let a=50, b=100;
+
+[a, b] = [b, a];
+
+console.log(x);
+console.log(y);
+console.log(z);
+console.log(t);
+
+console.log("value of a is: "+a);
+console.log("value of b is: "+b);
+
+let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+    
+    
+};
+
+let { firstName,  lastName, middleName = '', currentAge = 18 } = person;
+
+console.log('middleName ' +middleName); 
+console.log(currentAge); 
+
+
+let display = ({firstName, lastName}) => console.log(firstName, lastName);
+
+let person1 = {
+    firstName: 'John',
+    lastName: 'Doe',
+    middleName: 'C.'
+};
+
+display(person1);
+
+
+(function(a){
+    console.log(a*a)
+})(8);
+
+
+console.log(typeof null);
 
 
 
