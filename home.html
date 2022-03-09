@@ -3,10 +3,33 @@
 <head>
     <title>Document</title>
     <link rel="icon" href="global.png" type="image/png"> 
+    <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js" >
+    </script>
 
 </head>
 <body>
     <h1>Home page</h1>
-    
+    <p>Click here..</p>
+    <button>click</button>
+    <script>
+        var greeting = 'Hi';
+        
+        var messenger = {
+            greeting: 'Hello'
+        }
+
+        var messenger2 = {
+            greeting: 'Good Bye'
+        }
+
+        function say(name) {
+            console.log(this.greeting + ' ' + name);
+        }
+
+        say.call(this, "Mike");
+
+        say.call(messenger2, "Mike");
+    </script>
 </body>
 </html>

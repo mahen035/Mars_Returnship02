@@ -302,7 +302,7 @@ person1.name = "Dave";
 
 console.log('After: '+person1.name) */
 
-function getValues(){
+/* function getValues(){
    // return [10,20,30];
    return null;
 }
@@ -349,8 +349,95 @@ display(person1);
     console.log(a*a)
 })(8);
 
+ */
+//console.log(typeof null);
 
-console.log(typeof null);
+/* function add(x,y,z){
+    let sum = x+y+z;
+    console.log(sum);
+}
+
+console.log(add.length);
+console.log(add.prototype);
+
+
+const person = {
+    firstName: 'John',
+    lastName: 'Doe'
+}
+
+function greet(greeting, message) {
+    return `${greeting} ${this.firstName}, ${message}`;
+}
+
+let result = greet.apply(person, ['Hello', 'How are you?']);
+
+console.log(result);
+
+const computer = {
+    name: 'MacBook',
+    isOn: false,
+    turnOn() {
+        this.isOn = true;
+        return `The ${this.name} is On`;
+    },
+    turnOff() {
+        this.isOn = false;
+        return `The ${this.name} is Off`;
+    }
+};
+
+const server = {
+    name: 'Dell PowerEdge T30',
+    isOn: false
+};
+
+let result1 = computer.turnOn.apply(server);
+
+console.log(result1);
+
+let arr = [10,20,30];
+let numbers = [1,2,3];
+
+arr.push.apply(arr, numbers);
+
+console.log(arr); */
+
+/* var greeting = 'Hi';
+var messenger = {
+    greeting: 'Hello'
+}
+
+function say(name) {
+    console.log(this.greeting + ' ' + name);
+}
+
+say.call(this, "Mike");
+
+say.call;(messenger, "Mike"); */
+
+/* let Testfunc = () => {
+    console.log('first')
+    setTimeout(() => console.log('second'), 2000)
+    console.log('third')
+    }
+    Testfunc(); */
+
+
+    let order = (call_production,) =>{
+	 
+        console.log("Order placed. Please call production") // function  is being called
+     
+        call_production();
+
+     };
+     let production = () =>{ console.log("Production has started") }; 
+
+
+     order(production);
+    
+
+
 
 
 
